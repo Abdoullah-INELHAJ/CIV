@@ -5,6 +5,13 @@ Class {
 	#package : 'Civilization'
 }
 
+{ #category : 'as yet unclassified' }
+Archer >> attack: antoherUnit [
+
+	antoherUnit attackedByArcher: self
+	
+]
+
 { #category : 'initialization' }
 Archer >> initialize [
     super initialize.

@@ -5,6 +5,13 @@ Class {
 	#package : 'Civilization'
 }
 
+{ #category : 'as yet unclassified' }
+Pikeman >> attack: antoherUnit [
+
+	antoherUnit attackedByPikeman: self
+	
+]
+
 { #category : 'initialization' }
 Pikeman >> initialize [
     super initialize.

@@ -5,6 +5,13 @@ Class {
 	#package : 'Civilization'
 }
 
+{ #category : 'as yet unclassified' }
+Knight >> attack: antoherUnit [
+
+	antoherUnit attackedByKnight: self
+	
+]
+
 { #category : 'initialization' }
 Knight >> initialize [
     super initialize.

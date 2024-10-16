@@ -21,10 +21,6 @@ Unit >> attack: antoherUnit [
 	antoherUnit health: antoherUnit health - self attackPower .
 	self health: health - antoherUnit defensePower .
 	
-	
-	
-
-	 
 ]
 
 { #category : 'accessing' }
@@ -37,6 +33,30 @@ Unit >> attackPower [
 Unit >> attackPower: anObject [
 
 	attackPower := anObject
+]
+
+{ #category : 'fighting' }
+Unit >> attackedByArcher: anArcher [ 
+	      
+	 | ad dp dtm ati |
+        
+	dp := 20 * experience .
+   dtm := 1.
+   ati := 1.
+   ad := dp * dtm + ati.
+   anArcher health: anArcher health - ad
+]
+
+{ #category : 'as yet unclassified' }
+Unit >> attackedByKnight: Knight [ 
+	      
+	 | ad dp dtm ati |
+        
+	dp := 20 * experience .
+   dtm := 1.
+   ati := 1.
+   ad := dp * dtm + ati.
+   Knight health: Knight health - ad
 ]
 
 { #category : 'accessing' }
