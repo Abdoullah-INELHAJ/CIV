@@ -47,18 +47,6 @@ Unit >> attackedByArcher: anArcher [
    anArcher health: anArcher health - ad
 ]
 
-{ #category : 'as yet unclassified' }
-Unit >> attackedByKnight: Knight [ 
-	      
-	 | ad dp dtm ati |
-        
-	dp := 20 * experience .
-   dtm := 1.
-   ati := 1.
-   ad := dp * dtm + ati.
-   Knight health: Knight health - ad
-]
-
 { #category : 'accessing' }
 Unit >> defensePower [
 
